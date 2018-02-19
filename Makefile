@@ -5,7 +5,5 @@ README.html: README.rst
 	rst2html README.rst README.html
 
 server:
-	python2 http-server.py
-clean:
-	rm -f cgi-bin/hit-count.txt
-	rm -f README.html
+	python3 http-server.py
+
