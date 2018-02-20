@@ -39,3 +39,4 @@ print("""<form method='POST' action='index.py'>
 </form>"""%(userid,password))
 
 print(htmlbottom)
+db.close()

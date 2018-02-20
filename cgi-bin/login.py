@@ -58,3 +58,4 @@ else:#incorrect pw
     <input type='submit' value='Back'></input>
     </form>""")
 print(htmlbottom)
+db.close()

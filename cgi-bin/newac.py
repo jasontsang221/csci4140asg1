@@ -41,3 +41,4 @@ htmltail = """
 print (header + htmlhead)
 
 print(htmltail)
+db.close()

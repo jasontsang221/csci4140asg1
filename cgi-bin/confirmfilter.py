@@ -38,3 +38,4 @@ htmlbottom="""
 print (header + htmlhead)
 print (htmlmid)
 print (htmlbottom)
+db.close()

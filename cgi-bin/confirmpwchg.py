@@ -53,3 +53,4 @@ else:
     <input type='submit' value='Proceed'></input>
     </form>"""%userid)
 print(htmlbottom)
+db.close()

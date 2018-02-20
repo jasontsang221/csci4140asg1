@@ -15,7 +15,8 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS userinfo(name TEXT, pw TEXT)
 ''')
 db.commit()
-
+params=("admin", "admin")
+cursor.execute("INSERT INTO userinfo (name, pw) VALUES(?,?)",params)
 htmlhead = """
 <!DOCTYPE html>
 <html lang="en">

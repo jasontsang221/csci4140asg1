@@ -73,5 +73,6 @@ else: #register
     <input type="hidden" name="pass" value=%s></input>
      <input type="submit" value="Proceed"></input>
      </form>"""%(loginid,password))
-    printdb()
+    #printdb()
 print(htmlbottom)
+db.close()

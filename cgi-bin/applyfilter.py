@@ -19,7 +19,7 @@ newfilepath = os.getcwd()+"/Photos/"+"new_"+filename
 file=open(newfilepath,"w")
 shutil.copy2(os.getcwd()+"/Photos/"+filename,newfilepath)
 im=Image.open(newfilepath)
-lf=Image.open(os.getcwd()+"/Photos/lensflare.jpg")
+lf=Image.open(os.getcwd()+"/lensflare.jpg")
 im=im.convert("RGB")
 lf=lf.convert("RGB")
 width, height = im.size
