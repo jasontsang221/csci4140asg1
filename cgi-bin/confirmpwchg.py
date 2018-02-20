@@ -14,6 +14,7 @@ cursor=db.cursor()
 db.execute("SELECT * from userinfo")
 def changepw(loginid,password):
     cursor.execute("UPDATE userinfo SET pw=? WHERE name=?",(password,loginid))
+    db.commit()
 userid=form.getvalue("user")
 pw=form.getvalue("pw")
 currentpw=form.getvalue("currentpw")
