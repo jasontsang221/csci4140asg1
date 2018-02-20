@@ -25,12 +25,12 @@ def showphotos(loginid,page):
     for row in cursor.execute("SELECT * FROM userphotos ORDER BY id ASC"):
         if page==int((row[0]-1)/8)+1:
             if row[3]=='private' and row[2]==loginid:
-                print("<a href =/Photos/%s > <img src=/Photos/%s ></a>"%(row[1],row[1]))
+                print("<a href =/Photos/%s > <img src=/Photos/%s ></a><br>"%(row[1],row[1]))
                 #print("id=",row[0],"<br>\n")
             if row[3]=='public':
-                print("<a href =/Photos/%s > <img src=/Photos/%s ></a>"%(row[1],row[1]))
+                print("<a href =/Photos/%s > <img src=/Photos/%s ></a><br>"%(row[1],row[1]))
                 #print("id=",row[0],"<br>\n")
-    print("/<p>")
+    print("</p>")
 def countphoto(loginid):
     cursor=db.cursor()
     c=db.cursor()
